@@ -7,6 +7,6 @@ edition = "2021"
 rust-version = "1.65"
 
 [dependencies]
-eframe = "0.20.1"
-winit = "0.27.5"
+iced = "0.6.0"
+iced_aw = { version = "0.2", default-features = false, features = ["number_input"] }
 tracing-subscriber = "0.3"
