@@ -1,4 +1,4 @@
-use iced::widget::{button, column, text, Column};
+use iced::widget::{button, column, Column};
 use std::{
     io::Error,
     process::{Command, Output},
@@ -67,49 +67,49 @@ impl WlMirrorGui {
             Message::TopLeft => {
                 self.x_position = 0;
                 self.y_position = 0;
-                self.width = (self.x_monitor / 2);
-                self.height = (self.y_monitor / 2);
+                self.width = self.x_monitor / 2;
+                self.height = self.y_monitor / 2;
             }
             Message::TopRight => {
-                self.x_position = (self.x_monitor / 2);
+                self.x_position = self.x_monitor / 2;
                 self.y_position = 0;
-                self.width = (self.x_monitor / 2);
-                self.height = (self.y_monitor / 2);
+                self.width = self.x_monitor / 2;
+                self.height = self.y_monitor / 2;
             }
             Message::BottomLeft => {
                 self.x_position = 0;
-                self.y_position = (self.y_monitor / 2);
-                self.width = (self.x_monitor / 2);
-                self.height = (self.y_monitor / 2);
+                self.y_position = self.y_monitor / 2;
+                self.width = self.x_monitor / 2;
+                self.height = self.y_monitor / 2;
             }
             Message::BottomRight => {
-                self.x_position = (self.x_monitor / 2);
-                self.y_position = (self.y_monitor / 2);
-                self.width = (self.x_monitor / 2);
-                self.height = (self.y_monitor / 2);
+                self.x_position = self.x_monitor / 2;
+                self.y_position = self.y_monitor / 2;
+                self.width = self.x_monitor / 2;
+                self.height = self.y_monitor / 2;
             }
             Message::Bottom => {
                 self.x_position = 0;
-                self.y_position = (self.y_monitor / 2);
+                self.y_position = self.y_monitor / 2;
                 self.width = self.x_monitor;
-                self.height = (self.y_monitor / 2);
+                self.height = self.y_monitor / 2;
             }
             Message::Top => {
                 self.x_position = 0;
                 self.y_position = 0;
                 self.width = self.x_monitor;
-                self.height = (self.y_monitor / 2);
+                self.height = self.y_monitor / 2;
             }
             Message::Left => {
                 self.x_position = 0;
                 self.y_position = 0;
-                self.width = (self.x_monitor / 2);
+                self.width = self.x_monitor / 2;
                 self.height = self.y_monitor;
             }
             Message::Right => {
-                self.x_position = (self.x_monitor / 2);
+                self.x_position = self.x_monitor / 2;
                 self.y_position = 0;
-                self.width = (self.x_monitor / 2);
+                self.width = self.x_monitor / 2;
                 self.height = self.y_monitor;
             }
         }
