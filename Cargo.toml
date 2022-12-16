@@ -8,5 +8,4 @@ rust-version = "1.65"
 
 [dependencies]
 iced = "0.6.0"
-iced_aw = { version = "0.2", default-features = false, features = ["number_input"] }
 tracing-subscriber = "0.3"
